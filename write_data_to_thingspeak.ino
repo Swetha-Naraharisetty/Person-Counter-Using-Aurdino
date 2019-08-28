@@ -15,8 +15,8 @@ YunClient client;
 #ifdef USE_WIFI_SHIELD
 #include <SPI.h>
 // #include <WiFi.h> // Always comment this if your using ESP8266
-char ssid[] = "venkat"; // your network SSID (name)
-char pass[] = "123456789"; // your network password
+char ssid[] = ""; // your network SSID (name)
+char pass[] = ""; // your network password
 int status = WL_IDLE_STATUS;
 WiFiClient client;
 #else
@@ -33,8 +33,8 @@ EthernetClient client;
 #endif
 #ifdef ARDUINO_ARCH_ESP8266
 #include <ESP8266WiFi.h>
-char ssid[] = "venkat"; // your network SSID (name)
-char pass[] = "123456789"; // your network password
+char ssid[] = ""; // your network SSID (name)
+char pass[] = ""; // your network password
 int status = WL_IDLE_STATUS;
 WiFiClient client;
 // On ESP8266: 0 - 1023 maps to 0 - 1 volts
@@ -57,8 +57,8 @@ TCPClient client;
 WRITE API KEY!!
 ********************************************************************************
 *********/
-unsigned long myChannelNumber = 158552; // add your channel id here
-const char * myWriteAPIKey = "8DU2YGTCTM80RXXL"; // add Write API Key
+unsigned long myChannelNumber = ; // add your channel id here
+const char * myWriteAPIKey = ""; // add Write API Key
 void setup() {
 // put your setup code here, to run once:
 dht.begin();
